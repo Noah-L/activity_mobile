@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  Badminton
+
+  Created by NOAH LI (EUCD-EUC-ISD-OOCLL/ZHA) on 10/27/15.
+  Copyright © 2015 OOCL. All rights reserved.
+*/
+
+//-------------Common--------------//
+
+"CO_NAV_BACK"                       = "Back";
+"CO_NAV_MORE"                       = "More";
+"CO_NAV_SHARE"                      = "Share";
+"CO_NAC_CANCEL"                     = "Cancel";
+"CO_NAV_SKIP"                       = "Skip";
+"CO_NAV_EDIT"                       = "Edit";
+"CO_NAV_CLOSE"                      = "Close";
+"CO_NAV_APPLY"                      = "Apply";
+
+"CO_NAV_TITLE_SEARCH"               = "Search";
+"CO_NAV_TITLE_FAV"                  = "Favorites";
+"CO_NAV_TITLE_NEWS"                 = "News";
+"CO_NAV_TITLE_SETTINGS"             = "Settings";
+
+"CO_TAB_TITLE_HOME"                 = "Home";
+"CO_TAB_TITLE_ABOUT"                = "About";
+"CO_TAB_TITLE_CONTACT"              = "Contact Us";
+"CO_TAB_TITLE_SEARCH"               = "Search";
+"CO_TAB_TITLE_FAV"                  = "Favorites";
+"CO_TAB_TITLE_SETTINGS"             = "Settings";
+"CO_ALERT_OK"                       = "OK";
+"CO_ALERT_CANCLE"                   = "Cancel";
+"CO_ALERT_VIEW"                     = "View";
+"CO_ALERT_AGREE"                    = "Agree";
+"CO_ALERT_SUBMIT"                   = "Submit";
+"CO_ALERT_SAVE"                     = "Save";
+"CO_ALERT_DONE"                     = "Done";
+"CO_ALERT_ADD"                      = "Add";
+"CO_ALERT_UPGRADE"                  = "Upgrade";
+"CO_PROGRESS_LOADING"               = "Loading...";
+
+"CO_ALERT_NO_NETWORK"               = "Internet connection is unavailable.";
+"CO_ALERT_TIME_OUT"                 = "Connection Timeout. Please try again.";
+"CO_ALERT_CANNOT_CONNECT_HOST"      = "Cannot connect to server. Please try again.";
