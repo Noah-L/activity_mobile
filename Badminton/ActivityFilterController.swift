@@ -97,7 +97,6 @@ class ActivityFilterController: UITableViewController {
             default:
                 break
             }
-            return cell!
         case 3:
             cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
             cell?.textLabel?.text = NSLocalizedString("FILTER_SIGN_UP", comment: "")
@@ -121,7 +120,7 @@ class ActivityFilterController: UITableViewController {
         default:
             break
         }
-
+        cell?.textLabel?.textColor = UIColor.darkGrayColor()
         return cell!
     }
     

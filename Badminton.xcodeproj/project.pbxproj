@@ -193,8 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				39FF43AD1BEB030B003CD221 /* Filter */,
-				39FD1B071BDF0D300055F8EB /* TextFillCell.swift */,
-				39FD1B081BDF0D300055F8EB /* TextFillCell.xib */,
 				39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */,
 				39FD1B2A1BDF6A020055F8EB /* ActivityListTableViewController.xib */,
 				39A2840E1BE06B03003066C2 /* ActivityListCell.swift */,
@@ -214,6 +212,8 @@
 				39FD1B1F1BDF5B970055F8EB /* ManagementViewController.xib */,
 				39FD1B021BDE12280055F8EB /* CreateActivityViewController.swift */,
 				39FD1B031BDE12280055F8EB /* CreateActivityViewController.xib */,
+				39FD1B071BDF0D300055F8EB /* TextFillCell.swift */,
+				39FD1B081BDF0D300055F8EB /* TextFillCell.xib */,
 			);
 			name = Management;
 			sourceTree = "<group>";
