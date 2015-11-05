@@ -13,7 +13,18 @@ class ManagementViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = NSLocalizedString("CO_TAB_TITLE_MANAGEMENT", comment: "")
+        
+        let addBarItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButtonDidClick")
+        self.navigationItem.rightBarButtonItem = addBarItem
         // Do any additional setup after loading the view.
+    }
+    
+    func addButtonDidClick(){
+        print("add button did click")
+        
+        let createActivityViewController = CreateActivityViewController(nibName:"CreateActivityViewController",bundle:nil)
+        let createNav = UINavigationController(rootViewController: createActivityViewController)
+        self.presentViewController(createNav, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

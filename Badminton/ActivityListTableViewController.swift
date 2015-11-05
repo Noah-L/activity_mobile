@@ -14,19 +14,17 @@ class ActivityListTableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.title = NSLocalizedString("NAV_TITLE_ACTIVITY", comment: "")
         
-        let addBarItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButtonDidClick")
-        self.navigationItem.rightBarButtonItem = addBarItem
+        let filterBarItem = UIBarButtonItem(image: UIImage(named: "filter_icon"), style: .Plain, target: self, action: "filterButtonDidClick")
+        self.navigationItem.rightBarButtonItem = filterBarItem
         let nib = UINib(nibName: "ActivityListCell", bundle: NSBundle.mainBundle())
         tableView.registerNib(nib, forCellReuseIdentifier: activityCellId)
         
     }
     
-    func addButtonDidClick(){
-        print("add button did click")
-        
-        let createActivityViewController = CreateActivityViewController(nibName:"CreateActivityViewController",bundle:nil)
-        let createNav = UINavigationController(rootViewController: createActivityViewController)
-        self.presentViewController(createNav, animated: true, completion: nil)
+    func filterButtonDidClick(){
+        let filterController = ActivityFilterController(nibName:"ActivityFilterController",bundle: nil)
+        let filterNav = UINavigationController(rootViewController: filterController)
+        self.presentViewController(filterNav, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

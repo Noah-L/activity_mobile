@@ -32,6 +32,8 @@
 		39FD1B2B1BDF6A020055F8EB /* ActivityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */; };
 		39FD1B2C1BDF6A020055F8EB /* ActivityListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FD1B2A1BDF6A020055F8EB /* ActivityListTableViewController.xib */; };
 		39FF43A81BEAE544003CD221 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF43A71BEAE544003CD221 /* CommonStyle.swift */; };
+		39FF43AB1BEAF7CA003CD221 /* ActivityFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF43A91BEAF7CA003CD221 /* ActivityFilterController.swift */; };
+		39FF43AC1BEAF7CA003CD221 /* ActivityFilterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF43AA1BEAF7CA003CD221 /* ActivityFilterController.xib */; };
 		C0DF27F745C616DA2511F511 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DA52168786AE7DFE48C681 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListTableViewController.swift; sourceTree = "<group>"; };
 		39FD1B2A1BDF6A020055F8EB /* ActivityListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityListTableViewController.xib; sourceTree = "<group>"; };
 		39FF43A71BEAE544003CD221 /* CommonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
+		39FF43A91BEAF7CA003CD221 /* ActivityFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityFilterController.swift; sourceTree = "<group>"; };
+		39FF43AA1BEAF7CA003CD221 /* ActivityFilterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityFilterController.xib; sourceTree = "<group>"; };
 		68DA52168786AE7DFE48C681 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D307E8865E4DFD15CE35D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B1BD86C929241B8C48CEEFBF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 		39C9A09A1BD7A227008ECD85 /* Badminton */ = {
 			isa = PBXGroup;
 			children = (
+				39FF43A61BEAE522003CD221 /* Common */,
 				39FD1B221BDF5E670055F8EB /* Activity */,
 				39FD1B231BDF5E8A0055F8EB /* Management */,
 				39FD1B241BDF5E9E0055F8EB /* Account */,
@@ -187,9 +192,7 @@
 		39FD1B221BDF5E670055F8EB /* Activity */ = {
 			isa = PBXGroup;
 			children = (
-				39FF43A61BEAE522003CD221 /* Common */,
-				39FD1B021BDE12280055F8EB /* CreateActivityViewController.swift */,
-				39FD1B031BDE12280055F8EB /* CreateActivityViewController.xib */,
+				39FF43AD1BEB030B003CD221 /* Filter */,
 				39FD1B071BDF0D300055F8EB /* TextFillCell.swift */,
 				39FD1B081BDF0D300055F8EB /* TextFillCell.xib */,
 				39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */,
@@ -209,6 +212,8 @@
 			children = (
 				39FD1B1E1BDF5B970055F8EB /* ManagementViewController.swift */,
 				39FD1B1F1BDF5B970055F8EB /* ManagementViewController.xib */,
+				39FD1B021BDE12280055F8EB /* CreateActivityViewController.swift */,
+				39FD1B031BDE12280055F8EB /* CreateActivityViewController.xib */,
 			);
 			name = Management;
 			sourceTree = "<group>";
@@ -228,6 +233,15 @@
 				39FF43A71BEAE544003CD221 /* CommonStyle.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		39FF43AD1BEB030B003CD221 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				39FF43A91BEAF7CA003CD221 /* ActivityFilterController.swift */,
+				39FF43AA1BEAF7CA003CD221 /* ActivityFilterController.xib */,
+			);
+			name = Filter;
 			sourceTree = "<group>";
 		};
 		8B9A7CDF46840DC51F14C280 /* Pods */ = {
@@ -348,6 +362,7 @@
 				39A284151BE09C40003066C2 /* ActivityDetialViewController.xib in Resources */,
 				39FD1B2C1BDF6A020055F8EB /* ActivityListTableViewController.xib in Resources */,
 				39C9A0A61BD7A227008ECD85 /* LaunchScreen.storyboard in Resources */,
+				39FF43AC1BEAF7CA003CD221 /* ActivityFilterController.xib in Resources */,
 				39A284191BE0A08B003066C2 /* ActivityDetailCell.xib in Resources */,
 				39FD1B0F1BDF13090055F8EB /* Localizable.strings in Resources */,
 				39C9A0A31BD7A227008ECD85 /* Assets.xcassets in Resources */,
@@ -414,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FF43AB1BEAF7CA003CD221 /* ActivityFilterController.swift in Sources */,
 				39FD1B201BDF5B970055F8EB /* ManagementViewController.swift in Sources */,
 				39A284141BE09C40003066C2 /* ActivityDetialViewController.swift in Sources */,
 				39C9A09E1BD7A227008ECD85 /* ViewController.swift in Sources */,

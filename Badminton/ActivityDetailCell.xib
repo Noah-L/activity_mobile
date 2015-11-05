@@ -15,20 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-it-76Q">
-                        <rect key="frame" x="26" y="11.5" width="42" height="20.5"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uO-eA-gqG">
-                        <rect key="frame" x="270" y="11" width="42" height="20.5"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GyV-08-G5U">
                         <rect key="frame" x="8" y="15" width="10" height="14"/>
                         <animations/>
@@ -43,16 +29,36 @@
                             </mask>
                         </variation>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-it-76Q">
+                        <rect key="frame" x="26" y="11.5" width="42" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uO-eA-gqG">
+                        <rect key="frame" x="76" y="11" width="42" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
                     <constraint firstItem="GyV-08-G5U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7KB-gj-icJ"/>
+                    <constraint firstItem="3uO-eA-gqG" firstAttribute="leading" secondItem="kdL-it-76Q" secondAttribute="trailing" constant="8" id="G1D-xX-HN3"/>
                     <constraint firstItem="3uO-eA-gqG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WqL-Jx-2Sa"/>
                     <constraint firstItem="3uO-eA-gqG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dbk-er-YSl"/>
                     <constraint firstItem="kdL-it-76Q" firstAttribute="leading" secondItem="GyV-08-G5U" secondAttribute="trailing" constant="8" id="hSy-RG-Isx"/>
                     <constraint firstItem="GyV-08-G5U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lZP-oL-OYG"/>
                     <constraint firstItem="kdL-it-76Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="roG-Mo-yFS"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dbk-er-YSl"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <animations/>
             <connections>
