@@ -23,7 +23,6 @@ class ActivityDetialViewController: UIViewController,UITableViewDelegate,UITable
         tableView.registerNib(nib, forCellReuseIdentifier: activiryDetailCellId)
         
         self.navigationItem.title = NSLocalizedString("CREATE_ACTIVITY_DETAIL", comment: "")
-        tableView.scrollEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,27 +76,31 @@ class ActivityDetialViewController: UIViewController,UITableViewDelegate,UITable
             
             switch indexPath.row{
             case 0:
-                cellForSection0.iconImageView.image = UIImage(named: "location")
+                cellForSection0.iconImageView.image = UIImage(named: "location_icon")
                 cellForSection0.label.text = "珠海市第七中学"
             case 1:
-                cellForSection0.iconImageView.image = UIImage(named: "clock")
+                cellForSection0.iconImageView.image = UIImage(named: "calender_icon_small")
                 cellForSection0.label.text = "2015.10.30 9:30 - 2015.10.30 11:30"
             default:
                 break
             }
+            cellForSection0.detailLabel.text = nil;
             cell = cellForSection0
         case 1:
-            cell = UITableViewCell(style: .Value1, reuseIdentifier: detailInfoCellId)
-            cell.textLabel?.text = "截止时间:"
-            cell.textLabel?.textColor = UIColor.redColor()
-            cell.detailTextLabel?.text = "2015.10.28 17:00"
+            let cellForSection1 = tableView.dequeueReusableCellWithIdentifier(activiryDetailCellId, forIndexPath: indexPath) as! ActivityDetailCell
+            cellForSection1.iconImageView.image = UIImage(named: "clock_icon")
+            cellForSection1.label?.text = "截止时间:"
+            cellForSection1.label?.textColor = UIColor.redColor()
+            cellForSection1.detailLabel?.text = "2015.10.28 17:00"
+            cell = cellForSection1
         case 2:
             cell = UITableViewCell()
-            cell.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300)
+            cell.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400)
             let detailInfoTextView = UITextView(frame: CGRect(x: 8, y: 0, width: cell.frame.width-8, height: cell.frame.height))
             cell.addSubview(detailInfoTextView)
             detailInfoTextView.font = UIFont(name: "Helvetica Neue", size: 14)
             detailInfoTextView.editable = false
+            detailInfoTextView.scrollEnabled = false
             detailInfoTextView.text =
             "报名方式: \n按location分为一期二期三期四期报名参赛,每支队伍需提供【队名，口号，队伍合照，队长以及按不同参赛项目区分的队员名单】，竞技项目每人最多可兼报两项 (10.26-10.30)(先个人报名<deadline是10.30>，再推选队长或者由coordinator协调，制定参赛队伍名单)（团体报名包括：队伍名，location，队长，女双，男双，混双1，混双2，混双3,游戏者，裁判，队伍合照等信息，通过email方式发给committee，deadline是11.05）\n比赛项目\n竞技+娱乐\n竞技：1组男双+3组混双+1组女双\n娱乐：颠球踩点。\n比赛规则\n赛制：团体赛循环赛制（每支队伍都要和其他三支队伍进行比赛），采用印花计算方式，竞技比赛每赢一局获得七枚印花，娱乐项目通过一次活动一枚印花。\n团体排名：排名方式计算，优先级高到低：印花总数->竞技印花总数->竞技实际比分。"
         default:
@@ -109,7 +112,7 @@ class ActivityDetialViewController: UIViewController,UITableViewDelegate,UITable
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.section == 2 && indexPath.row == 0 ){
-            return 300
+            return 400
         }else{
             return 44
         }
@@ -117,12 +120,6 @@ class ActivityDetialViewController: UIViewController,UITableViewDelegate,UITable
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if(section == 0){
-//            let headerView = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
-//            headerView.font = UIFont(name: "Helvetica Neue", size: 20)
-//            headerView.numberOfLines = 0;
-//            headerView.text = "OOCL 2015羽毛球比赛"
-//            headerView.textAlignment = .Center
-//            return headerView;
             return nil
         }else{
             return nil

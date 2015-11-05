@@ -5,3 +5,54 @@
   Created by NOAH LI (EUCD-EUC-ISD-OOCLL/ZHA) on 10/27/15.
   Copyright © 2015 OOCL. All rights reserved.
 */
+//-------------Common--------------//
+"CO_NAV_BACK"                       = "返回";
+"CO_NAV_MORE"                       = "更多";
+"CO_NAV_SHARE"                      = "分享";
+"CO_NAC_CANCEL"                     = "取消";
+"CO_NAV_SKIP"                       = "跳过";
+"CO_NAV_EDIT"                       = "编辑";
+"CO_NAV_CLOSE"                      = "关闭";
+"CO_NAV_APPLY"                      = "应用";
+
+"CO_NAV_TITLE_SEARCH"               = "搜索";
+"CO_NAV_TITLE_FAV"                  = "收藏";
+"CO_NAV_TITLE_NEWS"                 = "新闻";
+"CO_NAV_TITLE_SETTINGS"             = "设定";
+
+"CO_TAB_TITLE_HOME"                 = "首页";
+"CO_TAB_TITLE_ABOUT"                = "关于";
+"CO_TAB_TITLE_CONTACT"              = "联系我们";
+"CO_TAB_TITLE_SEARCH"               = "搜索";
+"CO_TAB_TITLE_FAV"                  = "收藏";
+"CO_TAB_TITLE_SETTINGS"             = "设定";
+
+"CO_TAB_TITLE_ACTIVITY"             = "活动";
+"CO_TAB_TITLE_ACCOUNT"              = "账户";
+"CO_TAB_TITLE_MANAGEMENT"           = "管理";
+
+"CO_ALERT_OK"                       = "确定";
+"CO_ALERT_CANCLE"                   = "取消";
+"CO_ALERT_VIEW"                     = "查看";
+"CO_ALERT_AGREE"                    = "同意";
+"CO_ALERT_SUBMIT"                   = "提交";
+"CO_ALERT_SAVE"                     = "保存";
+"CO_ALERT_DONE"                     = "完成";
+"CO_ALERT_ADD"                      = "新增";
+"CO_ALERT_UPGRADE"                  = "版本升级";
+"CO_PROGRESS_LOADING"               = "读取中...";
+"CO_ALERT_NO_NETWORK"               = "没有检测到网络连接。";
+"CO_ALERT_TIME_OUT"                 = "连接超时，请重试。";
+"CO_ALERT_CANNOT_CONNECT_HOST"      = "无法连接到服务器，请重试。";
+
+//Activity
+"NAV_TITLE_ACTIVITY"                = "活动";
+
+"CREATE_ACTIVITY_TITLE"             = "创建活动";
+"CREATE_ACTIVITY_SUBJECT"           = "活动主题:";
+"CREATE_ACTIVITY_START_TIME"        = "开始时间:";
+"CREATE_ACTIVITY_END_TIME"          = "结束时间:";
+"CREATE_ACTIVITY_LAST_SIGN_UP_TIME" = "报名截止时间:";
+"CREATE_ACTIVITY_LOCATION"          = "活动地点:";
+"CREATE_ACTIVITY_MAX_COUNT"         = "活动名额:";
+"CREATE_ACTIVITY_DETAIL"            = "活动详情";

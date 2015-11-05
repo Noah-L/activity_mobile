@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        CommonStyle.setProjectCommonStyle()
+        
         // Override point for customization after application launch.
         let rootViewController = ActivityListTableViewController(nibName: "ActivityListTableViewController",bundle: nil)
         rootViewController.tabBarItem.title = NSLocalizedString("CO_TAB_TITLE_ACTIVITY", comment: "")

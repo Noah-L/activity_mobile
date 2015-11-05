@@ -31,6 +31,7 @@
 		39FD1B211BDF5B970055F8EB /* ManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FD1B1F1BDF5B970055F8EB /* ManagementViewController.xib */; };
 		39FD1B2B1BDF6A020055F8EB /* ActivityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */; };
 		39FD1B2C1BDF6A020055F8EB /* ActivityListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FD1B2A1BDF6A020055F8EB /* ActivityListTableViewController.xib */; };
+		39FF43A81BEAE544003CD221 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF43A71BEAE544003CD221 /* CommonStyle.swift */; };
 		C0DF27F745C616DA2511F511 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DA52168786AE7DFE48C681 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		39FD1B1F1BDF5B970055F8EB /* ManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagementViewController.xib; sourceTree = "<group>"; };
 		39FD1B291BDF6A020055F8EB /* ActivityListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListTableViewController.swift; sourceTree = "<group>"; };
 		39FD1B2A1BDF6A020055F8EB /* ActivityListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityListTableViewController.xib; sourceTree = "<group>"; };
+		39FF43A71BEAE544003CD221 /* CommonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
 		68DA52168786AE7DFE48C681 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D307E8865E4DFD15CE35D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B1BD86C929241B8C48CEEFBF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		39FD1B221BDF5E670055F8EB /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				39FF43A61BEAE522003CD221 /* Common */,
 				39FD1B021BDE12280055F8EB /* CreateActivityViewController.swift */,
 				39FD1B031BDE12280055F8EB /* CreateActivityViewController.xib */,
 				39FD1B071BDF0D300055F8EB /* TextFillCell.swift */,
@@ -217,6 +220,14 @@
 				39FD1B1B1BDF57400055F8EB /* AccountViewController.xib */,
 			);
 			name = Account;
+			sourceTree = "<group>";
+		};
+		39FF43A61BEAE522003CD221 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				39FF43A71BEAE544003CD221 /* CommonStyle.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		8B9A7CDF46840DC51F14C280 /* Pods */ = {
@@ -409,6 +420,7 @@
 				39A284101BE06B03003066C2 /* ActivityListCell.swift in Sources */,
 				39FD1B1C1BDF57400055F8EB /* AccountViewController.swift in Sources */,
 				39FD1B091BDF0D300055F8EB /* TextFillCell.swift in Sources */,
+				39FF43A81BEAE544003CD221 /* CommonStyle.swift in Sources */,
 				39FD1B041BDE12280055F8EB /* CreateActivityViewController.swift in Sources */,
 				39C9A09C1BD7A227008ECD85 /* AppDelegate.swift in Sources */,
 				39FD1B2B1BDF6A020055F8EB /* ActivityListTableViewController.swift in Sources */,
